@@ -105,13 +105,13 @@ public class App {
         String descricao = obtemDoUsuario("a descricao do produto");
         Double quantidade = Double.valueOf(obtemDoUsuario("a quantidade do produto"));
         Double preco = Double.valueOf(obtemDoUsuario("o preco do produto"));
-        Produtos produto = new Produtos(nome, descricao, quantidade, preco);
+        Produto produto = new Produto(nome, descricao, quantidade, preco);
         addProduto(produto);
     }
 
     private void consultarProduto() {
         int codigo = Integer.parseInt(obtemDoUsuario("o codigo do produto"));
-        Produtos produto = getProduto(codigo);
+        Produto produto = getProduto(codigo);
         mostar(produto);
     }
 
