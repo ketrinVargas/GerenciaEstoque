@@ -11,6 +11,8 @@ public class App {
             escolhaValida  = primeiraEscolha(0);
         } while (escolhaValida);
         
+
+        
     }   
 
     private boolean primeiraEscolha(int e) {
