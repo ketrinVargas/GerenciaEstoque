@@ -19,7 +19,6 @@ public class Produto {
         this.produtos = produtos;
     }
 
-
     public String toString() {
         return "Código: " + codigo + "Nome: " + nome + "Descrição: " + descricao + "Quantidade: " + quantidade
                 + "Preço: " + preco;
