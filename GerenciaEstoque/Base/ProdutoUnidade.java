@@ -1,4 +1,4 @@
-package Base;
+package GerenciaEstoque.Base; 
 
 public class ProdutoUnidade extends Produto{
 
@@ -6,13 +6,13 @@ public class ProdutoUnidade extends Produto{
 
     // quantidade ainda esta como atributo
 
-    public ProdutoUnidade(int codigo, String nome, String descricao,int quantidade, double preco, int prodUnidade){
+    public ProdutoUnidade(int codigo, String nome, String descricao, double preco, int quantidade){
         super(codigo, nome, descricao, preco);
         this.quantidade = quantidade;
     }
 
     public String toString() {
-        return super.toString() + "Quantidade: "
+        return super.toString() + "Quantidade por Unidade: "
                 + quantidade;
     }
 

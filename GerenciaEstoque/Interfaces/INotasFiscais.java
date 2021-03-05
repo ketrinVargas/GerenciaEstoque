@@ -1,3 +1,8 @@
+package GerenciaEstoque.Interfaces;
+
+import GerenciaEstoque.Base.Item;
+import GerenciaEstoque.Base.NotaFiscal;
+
 public interface INotasFiscais {
 
     /**

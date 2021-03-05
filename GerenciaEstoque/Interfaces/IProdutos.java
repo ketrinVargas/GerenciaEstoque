@@ -1,3 +1,7 @@
+package GerenciaEstoque.Interfaces;
+
+import GerenciaEstoque.Base.Produto;
+
 public interface IProdutos {
     /**
      * Adiciona um produto ao estoque.

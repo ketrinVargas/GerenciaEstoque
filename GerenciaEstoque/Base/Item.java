@@ -1,4 +1,4 @@
-package Base;
+package GerenciaEstoque.Base; 
 
 public class Item {
 

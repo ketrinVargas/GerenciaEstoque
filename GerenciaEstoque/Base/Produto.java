@@ -1,12 +1,9 @@
-package Base;
-
-import java.util.ArrayList;
+package GerenciaEstoque.Base; 
 
 public class Produto {
     private int codigo;
     private String nome;
     private String descricao;
-    private double quantidade;
     private double preco;
 
     public Produto(int codigo, String nome, String descricao, double preco) {
@@ -16,10 +13,8 @@ public class Produto {
         this.preco = preco;
     }
 
-
     public String toString() {
-        return "Código: " + codigo + "Nome: " + nome + "Descrição: " + descricao + "Quantidade: " + quantidade
-                + "Preço: " + preco;
+        return "Código: " + codigo + "Nome: " + nome + "Descrição: " + descricao + "Preço: " + preco;
     }
 
 
@@ -33,10 +28,6 @@ public class Produto {
 
     public String getDescricao() {
         return descricao;
-    }
-
-    public double getQuantidade() {
-        return quantidade;
     }
 
     public double getPreco() {
@@ -53,10 +44,6 @@ public class Produto {
 
     public void setDescricao(String descricao) {
         this.descricao = descricao;
-    }
-
-    public void setQuantidade(double quantidade) {
-        this.quantidade = quantidade;
     }
 
     public void setPreco(double preco) {

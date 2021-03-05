@@ -1,4 +1,4 @@
-package Base;
+package GerenciaEstoque.Base; 
 
 import java.util.ArrayList;
 
