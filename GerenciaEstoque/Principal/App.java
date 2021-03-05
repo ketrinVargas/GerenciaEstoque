@@ -4,8 +4,6 @@ import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
-import org.graalvm.compiler.nodes.NodeView.Default;
-
 public class Interacao {
     Scanner entrada = new Scanner(System.in);
 
@@ -176,8 +174,5 @@ public class Interacao {
 
         
     }
-
-
-
     
 }

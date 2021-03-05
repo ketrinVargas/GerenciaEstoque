@@ -1,4 +1,4 @@
-package GerenciaEstoque;
+package Base;
 
 public class Item {
 

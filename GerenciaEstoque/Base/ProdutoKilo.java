@@ -1,12 +1,11 @@
 package Base;
 
-public class ProdutoUnidade extends Produto{
-
-    private int quantidade;
+public class ProdutoKilo extends Produto{
+    private float quantidade;
 
     // quantidade ainda esta como atributo
 
-    public ProdutoUnidade(int codigo, String nome, String descricao,int quantidade, double preco, int prodUnidade){
+    public ProdutoKilo(int codigo, String nome, String descricao, float quantidade, double preco, int prodUnidade){
         super(codigo, nome, descricao, preco);
         this.quantidade = quantidade;
     }
@@ -16,12 +15,13 @@ public class ProdutoUnidade extends Produto{
                 + quantidade;
     }
 
-    public int getQuantidade() {
+    public float getQuantidade() {
         return quantidade;
     }
 
     public void setQuantidade(int quantidade) {
         this.quantidade = quantidade;
     }
+    
     
 }

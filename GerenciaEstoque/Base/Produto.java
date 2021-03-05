@@ -1,4 +1,4 @@
-package GerenciaEstoque;
+package Base;
 
 import java.util.ArrayList;
 
@@ -8,15 +8,12 @@ public class Produto {
     private String descricao;
     private double quantidade;
     private double preco;
-    
 
-    public Produto(int codigo, String nome, String descricao, double quantidade, double preco) {
+    public Produto(int codigo, String nome, String descricao, double preco) {
         this.codigo = codigo;
         this.nome = nome;
         this.descricao = descricao;
-        this.quantidade = quantidade;
         this.preco = preco;
-
     }
 
 
