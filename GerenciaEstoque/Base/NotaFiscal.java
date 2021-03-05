@@ -14,7 +14,7 @@ public class NotaFiscal{
 
     }
     public String toString() {
-        return "Código: " + codigo + "Data:  " + data ;
+        return "Código: " + codigo + "Data:  " + data + "Itens : " + itens;
     }
 
     public int getData() {

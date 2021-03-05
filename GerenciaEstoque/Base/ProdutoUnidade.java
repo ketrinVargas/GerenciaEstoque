@@ -6,7 +6,7 @@ public class ProdutoUnidade extends Produto{
 
     public ProdutoUnidade(int codigo, String nome, String descricao, double quantidade, double preco, int prodUnidade){
         super(codigo, nome, descricao, quantidade, preco);
-        this.prodUnidade = 2;
+        this.prodUnidade = prodUnidade;
     }
 
     public String toString() {

@@ -19,11 +19,6 @@ public class Produto {
 
     }
 
-    public Produto(int codigo, String nome, double preco){
-        this.codigo = 1234;
-        this.nome = "";
-        this.preco = 1.99;
-    }
 
     public String toString() {
         return "Código: " + codigo + "Nome: " + nome + "Descrição: " + descricao + "Quantidade: " + quantidade
