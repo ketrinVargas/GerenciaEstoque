@@ -1,4 +1,6 @@
+import java.text.DateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
@@ -160,7 +162,9 @@ public class Interacao {
     }
 
     private void consultarNota() {
-        
+        int codigo = Integer.parseInt(obtemDoUsuario("o codigo da nota"));
+        NotaFiscal nota = getNotaFiscal(codigo);
+        mostar(nota);
     }
 
     private void alterarNota() {
@@ -168,6 +172,8 @@ public class Interacao {
     }
 
     private void totalDoDia() {
+        /*Date data = parse date*/ obtemDoUsuario(" a data. (DD/MM/AAAA)");
+
         
     }
 
