@@ -1,7 +1,7 @@
 package GerenciaEstoque.Interfaces;
 
+import GerenciaEstoque.Base.Item;
 import GerenciaEstoque.Base.NotaFiscal;
-import GerenciaEstoque.Interfaces.INotasFiscais;
 import java.util.ArrayList;
 
 public class NotasFiscais implements INotasFiscais {
