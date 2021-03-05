@@ -8,20 +8,20 @@ public class Produto {
     private String descricao;
     private double quantidade;
     private double preco;
-    private ArrayList<Produto> produtos;
+    
 
-    public Produto(int codigo, String nome, String descricao, double quantidade, double preco, ArrayList<Produto> produtos) {
+    public Produto(int codigo, String nome, String descricao, double quantidade, double preco) {
         this.codigo = codigo;
         this.nome = nome;
         this.descricao = descricao;
         this.quantidade = quantidade;
         this.preco = preco;
-        this.produtos = produtos;
+
     }
 
     public Produto(int codigo, String nome, double preco){
         this.codigo = 1234;
-        this.nome = nome;
+        this.nome = "";
         this.preco = 1.99;
     }
 
@@ -30,9 +30,6 @@ public class Produto {
                 + "Preço: " + preco;
     }
 
-    public Produto(int codigo) {
-        this.codigo = codigo;
-    }
 
     public int getCodigo() {
         return codigo;
