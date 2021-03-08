@@ -10,19 +10,31 @@ public class NotasFiscais implements INotasFiscais {
 
     @Override
     public boolean addNotaFiscal(NotaFiscal nf) {
-        // TODO Auto-generated method stub
+        for(NotaFiscal notaF: notaFiscal){
+			if(notaF == nf){
+				notaFiscal.add(notaF);
+			}
+		}
         return false;
     }
 
     @Override
     public boolean removeNotaFiscal(int codigo) {
-        // TODO Auto-generated method stub
+        for(NotaFiscal notaF: notaFiscal){
+			if(notaF.getCodigo() == codigo){
+				notaFiscal.remove(notaF);
+			}
+		}
         return false;
     }
 
     @Override
     public NotaFiscal getNotaFiscal(int codigo) {
-        // TODO Auto-generated method stub
+        for(NotaFiscal notaF: notaFiscal){
+			if(notaF.getCodigo() == codigo){
+				return notaF;
+			}
+		}
         return null;
     }
 
