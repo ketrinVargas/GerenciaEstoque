@@ -2,26 +2,26 @@ package GerenciaEstoque.Base;
 
 public class ProdutoUnidade extends Produto{
 
-    private int quantidadeUnidade;
+    private int quantidade;
 
     // quantidade ainda esta como atributo
 
     public ProdutoUnidade(int codigo, String nome, String descricao, double preco, int quantidade){
         super(codigo, nome, descricao, preco);
-        this.quantidadeUnidade = quantidadeUnidade;
+        this.quantidade = quantidade;
     }
 
     public String toString() {
         return super.toString() + "Quantidade por Unidade: "
-                + quantidadeUnidade;
+                + quantidade;
     }
 
     public int getQuantidade() {
-        return quantidadeUnidade;
+        return quantidade;
     }
 
-    public void setQuantidade(int quantidadeUnidade) {
-        this.quantidadeUnidade = quantidadeUnidade;
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
     }
     
 }

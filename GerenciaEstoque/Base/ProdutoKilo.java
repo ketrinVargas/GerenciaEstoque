@@ -1,26 +1,26 @@
 package GerenciaEstoque.Base; 
 
 public class ProdutoKilo extends Produto{
-    private float quantidadeKilo;
+    private double quantidade;
 
     // quantidade ainda esta como atributo
 
-    public ProdutoKilo(int codigo, String nome, String descricao,  double preco, float quantidade){
+    public ProdutoKilo(int codigo, String nome, String descricao,  double preco, double  quantidade){
         super(codigo, nome, descricao, preco);
-        this.quantidadeKilo = quantidadeKilo;
+        this.quantidade = quantidade;
     }
 
     public String toString() {
         return super.toString() + "Quantidade por quilo: "
-                + quantidadeKilo;
+                + quantidade;
     }
 
-    public float getQuantidade() {
-        return quantidadeKilo;
+    public double getQuantidade() {
+        return quantidade;
     }
 
-    public void setQuantidade(int quantidadeKilo) {
-        this.quantidadeKilo = quantidadeKilo;
+    public void setQuantidade(double  quantidade) {
+        this.quantidade = quantidade;
     }
     
     
