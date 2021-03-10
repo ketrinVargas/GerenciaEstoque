@@ -1,3 +1,7 @@
+package Interfaces;
+
+import Base.Produto;
+
 public interface IProdutos {
     /**
      * Adiciona um produto ao estoque.

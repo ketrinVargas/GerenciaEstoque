@@ -35,9 +35,6 @@ public class Produto {
         return descricao;
     }
 
-    public double getQuantidade() {
-        return quantidade;
-    }
 
     public double getPreco() {
         return preco;
@@ -53,10 +50,6 @@ public class Produto {
 
     public void setDescricao(String descricao) {
         this.descricao = descricao;
-    }
-
-    public void setQuantidade(double quantidade) {
-        this.quantidade = quantidade;
     }
 
     public void setPreco(double preco) {

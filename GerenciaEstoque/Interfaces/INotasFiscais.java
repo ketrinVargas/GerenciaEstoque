@@ -1,3 +1,8 @@
+package Interfaces;
+
+import Base.Item;
+import Base.NotaFiscal;
+
 public interface INotasFiscais {
 
     /**

@@ -1,9 +1,60 @@
-package GerenciaEstoque;
+package Interfaces;
 
 import java.util.ArrayList;
 
+import Base.Item;
+import Base.NotaFiscal;
+
 public class NotasFiscais implements INotasFiscais {
 
-    ArrayList <NotaFiscal> notaFiscal;
+    boolean result;
+    private ArrayList <NotaFiscal> notaFiscal;
+
+    @Override
+    public boolean addNotaFiscal(NotaFiscal nf) {
+        result = notaFiscal.add(nf);
+        return result;
+    }
+
+    @Override
+    public boolean removeNotaFiscal(int codigo) {
+        NotaFiscal notaRemovida = notaFiscal.remove(codigo);
+        if (notaRemovida == null) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    @Override
+    public NotaFiscal getNotaFiscal(int codigo) {
+        NotaFiscal nota = notaFiscal.get(codigo);
+        if (nota != null) {
+            return nota;
+        } else {
+            return null;
+        }
+    }
+
+    @Override
+    public double getTotal(int codigo) {
+        NotaFiscal nota = notaFiscal.get(codigo);
+        nota.
+        return 0;
+    }
+
+    @Override
+    public boolean addItem(int codigo, Item item) {
+        // TODO Auto-generated method stub
+        return false;
+    }
+
+    @Override
+    public boolean removeItem(int codigo, Item item) {
+        // TODO Auto-generated method stub
+        return false;
+    }
+
+    
     
 }

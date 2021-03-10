@@ -4,6 +4,8 @@ import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
+import Base.Produto;
+
 public class Interacao {
     Scanner entrada = new Scanner(System.in);
 
@@ -113,7 +115,7 @@ public class Interacao {
     private int consultarProduto() {
         int codigo = Integer.parseInt(obtemDoUsuario("o codigo do produto"));
         Produto produto = getProduto(codigo);
-        mostar(produto);
+        mostar(produto.toString());
         return codigo;
     }
 

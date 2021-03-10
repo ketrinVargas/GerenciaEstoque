@@ -2,7 +2,7 @@ package Base;
 
 public class Item {
 
-    Produto produtos;
+    private Produto produtos;
     private double quantidade;
 
     public Item(Produto produtos, double quantidade){
@@ -18,7 +18,6 @@ public class Item {
         this.quantidade = quantidade;
     }
     
-
     
     
 }
