@@ -1,6 +1,7 @@
 package Interfaces;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import Base.Item;
 import Base.NotaFiscal;
@@ -39,7 +40,8 @@ public class NotasFiscais implements INotasFiscais {
     @Override
     public double getTotal(int codigo) {
         NotaFiscal nota = notaFiscal.get(codigo);
-        nota.
+        List itens = nota.getItens();
+        
         return 0;
     }
 

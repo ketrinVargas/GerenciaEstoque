@@ -17,6 +17,10 @@ public class Item {
     public void setQuantidade(Double quantidade) {
         this.quantidade = quantidade;
     }
+
+    public Produto getProduto(){
+        return  produtos;
+    }
     
     
     

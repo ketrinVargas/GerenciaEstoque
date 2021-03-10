@@ -12,8 +12,8 @@ public class NotaFiscal{
         this.codigo = codigo;
         this.data = data;
         this.itens = itens;
-
     }
+    
     public String toString() {
         return "Código: " + codigo + "Data:  " + data + "Itens : " + itens;
     }
@@ -32,6 +32,7 @@ public class NotaFiscal{
     public void setData(int data) {
         this.data = data;
     }
+
     public List getItens(){
         return itens;
     }
