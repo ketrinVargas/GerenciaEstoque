@@ -5,6 +5,7 @@ import java.util.List;
 
 import Base.Item;
 import Base.NotaFiscal;
+import Base.Produto;
 
 public class NotasFiscais implements INotasFiscais {
 
@@ -40,9 +41,15 @@ public class NotasFiscais implements INotasFiscais {
     @Override
     public double getTotal(int codigo) {
         NotaFiscal nota = notaFiscal.get(codigo);
-        List itens = nota.getItens();
-        
-        return 0;
+        List<Item> itens = nota.getItens();
+        double total = 0;
+        for(Item item : itens){
+            double quantidade = item.getQuantidade();
+            Produto produto = item.getProduto();
+            double  preco = produto.getPreco();
+            total = quantidade*preco;
+        }
+        return total;
     }
 
     @Override
