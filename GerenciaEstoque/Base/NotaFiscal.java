@@ -1,13 +1,14 @@
 package Base;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class NotaFiscal{
     private int data;
     private int codigo;
-    ArrayList <Item> itens;
+    List <Item> itens;
 
-    public NotaFiscal(int data, int codigo, ArrayList <Item> itens){
+    public NotaFiscal(int data, int codigo, List <Item> itens){
         this.codigo = codigo;
         this.data = data;
         this.itens = itens;
@@ -31,7 +32,9 @@ public class NotaFiscal{
     public void setData(int data) {
         this.data = data;
     }
-
+    public List getItens(){
+        return itens;
+    }
    
 
 }
