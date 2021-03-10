@@ -3,8 +3,6 @@ package Principal;
 public class Opcoes {
 
     
-
-
     public boolean primeiraEscolha(int e) {
         switch (e) {
             case 0: 
